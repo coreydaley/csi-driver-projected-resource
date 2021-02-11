@@ -1,0 +1,13 @@
+domain: openshift.io
+layout: go.kubebuilder.io/v3
+projectName: csi-driver-projected-resource
+repo: github.com/openshift/csi-driver-projected-resource
+resources:
+- crdVersion: v1
+  group: projectedresource.storage
+  kind: Share
+  version: v1alpha1
+version: 3-alpha
+plugins:
+  manifests.sdk.operatorframework.io/v2: {}
+  scorecard.sdk.operatorframework.io/v2: {}

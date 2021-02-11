@@ -1,0 +1,7 @@
+apiVersion: projectedresource.storage.openshift.io/v1alpha1
+kind: Share
+metadata:
+  name: share-sample
+spec:
+  # Add fields here
+  foo: bar

@@ -1,0 +1,3 @@
+resources:
+- hostpath_driverinfo.yaml
+- hostpath_plugin.yaml

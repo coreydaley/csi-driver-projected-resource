@@ -1,0 +1,24 @@
+# permissions for end users to edit shares.
+apiVersion: rbac.authorization.k8s.io/v1
+kind: ClusterRole
+metadata:
+  name: share-editor-role
+rules:
+- apiGroups:
+  - projectedresource.storage.openshift.io
+  resources:
+  - shares
+  verbs:
+  - create
+  - delete
+  - get
+  - list
+  - patch
+  - update
+  - watch
+- apiGroups:
+  - projectedresource.storage.openshift.io
+  resources:
+  - shares/status
+  verbs:
+  - get
